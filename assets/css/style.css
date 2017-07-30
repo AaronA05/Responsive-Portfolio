@@ -71,8 +71,12 @@ h1, h2, h3, h4, h5 {
 	border: 1px solid #dddddd;
 }
 
-.p-big{
+/*.p-big{
 	line-height: 200%;
+}*/
+.head-shot{
+	height: 250px;
+	width: 200px;
 }
 
 .side-bar {
@@ -83,6 +87,35 @@ h1, h2, h3, h4, h5 {
 	position: fixed;
 	/*z-index: -10;*/
 	border: 1px solid #dddddd;
+	text-align: center
+}
+.connect-icon1{
+	padding-top: -10px;
+	padding-right: 2px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+.connect-icon2{
+	padding-top: -10px;
+	padding-right: 2px;
+	padding-bottom: 15px;
+	padding-left: 2px;
+}
+.connect-icon3{
+	padding-top: -10px;
+	padding-right: 2px;
+	padding-bottom: 15px;
+	padding-left: 2px;
+}	
+.connect-hr{
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+.paragraphs{
+	margin-top: 20px;
+	line-height: 200%;
 }
 
 
@@ -109,6 +142,14 @@ ul{
 
 li{
 	display:inline-block;
+}
+.About-Me{
+	border-right: 1px solid #ddd;
+	padding-right: 10px;
+}
+.Portfolio{
+	border-right: 1px solid #ddd;
+	padding-right: 10px;
 }
 
 li a{
@@ -170,13 +211,25 @@ body, html {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.input-name, .input-email{
+	width: 600px;
+}
+
+textarea{
+	width: 600px;
+	height: 350px;
+
+}
 
 
 /*Project Page CSS*/
 .Project{
 	position: relative;
 }
-
+.Project-Img{
+		height: 250px;
+		width: 250px;
+}
 .Project-One{
 	position: absolute;
 	background-color: #4aaaa5;
@@ -213,4 +266,243 @@ body, html {
 	width: 250px;
 	top: 475px;
 	left: 280px;
+}
+
+
+
+/*Media Queries Section*/
+
+/*Media Query for 980px Screen*/
+
+@media screen and (max-width: 980px){
+	/*Index Page*/
+	.main-section{
+		width: 300px;
+		margin-left: 100px;
+	}
+	.nav-header{
+		margin-left: 100px;
+	}
+	.head-shot{
+		height: 350px;
+		width: 280px;
+	}
+	.side-bar{
+		margin-left: 500px;
+	}
+	ul{
+		margin-right: 125px;
+	}
+
+	/*Portfolio Page*/
+	.Project{
+		margin:auto;
+	}
+	.Project-Img{
+		height: 275px;
+		width: 275px;
+	}
+	.Project-One{
+		width: 275px;
+		margin:auto;
+	}
+	.Project-Two{
+		left: 10px;
+		top: 500px;
+		width: 275px;
+		margin:auto;
+	}
+	.Project-Three{
+		left: 10px;
+		top: 800px;
+		width: 275px;
+		margin:auto;
+	}
+	.Project-Four{
+		left: 10px;
+		top: 1100px;
+		width: 275px;
+		margin:auto;
+	}
+	/*Contact Page*/
+	.input-name, .input-email{
+		width: 290px;
+	}
+	textarea{
+		width: 290px;
+		height: 225px;
+	}
+}
+
+
+
+/*Media Query for 768px screen*/
+
+@media screen and (max-width: 768px){
+	/*Index Page*/
+	.main-section{
+		width: 650px;
+		margin-left: 25px;
+		margin-bottom: 25px;
+	}
+	.nav-header{
+		margin-left: 25px;
+	}
+	.head-shot{
+		height: 350px;
+		width: 280px;
+	}
+	.side-bar{
+		margin-left: 25px;
+		position: relative;
+		display: block;
+		float: left;
+		width: 680px;
+		text-align: left;
+		padding-left: 10px;
+	}
+	ul{
+		margin-right: 10px;
+	}
+	.connect-icon1{
+		padding-top: 0px;
+		padding-right: 2px;
+		padding-bottom: 15px;
+		padding-left: 0px;	
+	}
+
+
+	/*Project Pages*/
+	.Project-Img{
+		height: 300px;
+		width: 300px;
+	}
+	.Project-One{
+		top: 240px;
+		width: 300px;
+	}
+	.Project-Two{
+		left: 330px;
+		top: 240px;
+		width: 300px;
+		margin:auto;
+	}
+	.Project-Three{
+		left: 10px;
+		top: 560px;
+		width: 300px;
+		margin:auto;
+	}
+	.Project-Four{
+		left: 330px;
+		top: 560px;
+		width: 300px;
+		margin:auto;
+	}
+
+/*Contact Page*/
+	.input-name, .input-email{
+		width: 650px;
+	}
+	textarea{
+		width: 650px;
+		height: 225px;
+	}
+}
+
+/*Media Query for 640px Screen*/
+
+@media screen and (max-width: 640px){
+	.nav-header{
+		display:block;
+		width:100%;
+		margin-top: -5px;
+		margin-right: -5px;
+		margin-bottom: 5px;
+		margin-left: -5px;
+		text-align: center;
+	}
+	.About-Me{
+		width: 32%;
+		text-align: center;
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+
+	}
+	.Portfolio{
+		width:32%;
+		text-align: center;
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+	}
+	.Contact{
+		text-align: center;
+		width: 32%;
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+	}
+	ul{
+		display:block;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+	}
+	.below-nav{
+		margin-top: 175px;
+	}
+	.main-section{
+		width: 525px;
+	}
+	.head-shot{
+		width: 500px;
+		height: 550px;
+	}
+	.side-bar{
+		width: 550px;
+	}
+
+		/*Portfolio Page*/
+	.Project-Img{
+		height: 400px;
+		width: 500px;
+	}
+	.Project-One{
+		top: 340px;
+		width: 500px;
+	}
+	.Project-Two{
+		left: 10px;
+		top: 765px;
+		width: 500px;
+		margin:auto;
+	}
+	.Project-Three{
+		left: 10px;
+		top: 1190px;
+		width: 500px;
+		margin:auto;
+	}
+	.Project-Four{
+		left: 10px;
+		top: 1615px;
+		width: 500px;
+		margin:auto;
+	}
+
+/*Contact Page*/
+	.input-name, .input-email{
+		width: 515px;
+	}
+	textarea{
+		width: 515px;
+		height: 225px;
+	}
+
+
 }
